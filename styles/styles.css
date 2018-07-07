@@ -73,6 +73,9 @@ nav ul {
         background: #EC407A;
         color: white; }
 
+nav .menu {
+  display: none; }
+
 .hero {
   margin: 0 20%;
   padding-top: 30px;
@@ -415,3 +418,203 @@ nav ul {
       -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.16);
       -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.16);
       box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.16); }
+
+/* ---------------------------------------------------- media-queries -------------------------------------------------- */
+@media (max-width: 736px) {
+  nav .nav-items {
+    display: none; }
+  nav .menu {
+    display: block;
+    z-index: 500; }
+    nav .menu .menu-icon {
+      width: 40px;
+      float: right;
+      margin: 20px;
+      cursor: pointer;
+      z-index: 200; }
+    nav .menu ul {
+      padding-top: 80px; }
+      nav .menu ul li {
+        display: block;
+        background: #F1F4F6; }
+        nav .menu ul li a {
+          padding-right: 8px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid white; }
+    nav .menu ul.nav-list.selected {
+      display: block; }
+    nav .menu ul.nav-list {
+      display: none;
+      margin-top: 0; } }
+
+@media (max-width: 1100px) {
+  .objectives h1, .day-plan h1 {
+    font-size: 3rem; }
+  .partners .heading h1, .register .heading h1 {
+    font-size: 3rem; }
+  .objectives {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .objectives h1 {
+      width: 40%; }
+    .objectives .content-card {
+      width: 60%; }
+    .objectives .square-background {
+      left: 25%; } }
+
+@media (max-width: 1000px) {
+  .event-info .info-card {
+    width: 60%; }
+    .event-info .info-card .free-panel {
+      padding: 20px 10%; } }
+
+@media (max-width: 736px) {
+  html {
+    font-size: 13px; }
+  .hero {
+    margin: 0 10%; }
+    .hero .hero-contents .android-illustration img {
+      -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+      transform: scale(0.6); }
+  .background .pink-triangle, .background .blue-triangle, .background .pink-strip, .background .yellow-strip {
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3); }
+  .background .pink-strip {
+    right: -160px; }
+  .background .yellow-strip {
+    top: -110px; }
+  .partners .partner-logos {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .partners .logo {
+    width: 30%;
+    margin-bottom: 20px; }
+  .partners .yellow-strip img {
+    -webkit-transform: translate(160px) scale(0.3);
+    -ms-transform: translate(160px) scale(0.3);
+    transform: translate(160px) scale(0.3); }
+  .partners .pink-strip img {
+    -webkit-transform: translate(-160px, -100px) scale(0.3);
+    -ms-transform: translate(-160px, -100px) scale(0.3);
+    transform: translate(-160px, -100px) scale(0.3); } }
+
+@media (max-width: 670px) {
+  .objectives {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .objectives .content-card {
+      width: 80%;
+      margin-left: 20%; }
+    .objectives .square-background {
+      width: 40%;
+      top: -5%; }
+    .objectives .pink-grid {
+      left: 30px;
+      top: -30px; }
+  .day-plan {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .day-plan h1 {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      text-align: right;
+      width: 80%; }
+    .day-plan .content-card {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+      width: 80%; }
+    .day-plan .square-background {
+      right: 30%;
+      top: -5%;
+      width: 40%; }
+    .day-plan .blue-grid {
+      right: 20px;
+      top: -100px; } }
+
+@media (max-width: 550px) {
+  html {
+    font-size: 12px; }
+  .hero {
+    margin-top: 50px; }
+  .hero .hero-contents .hero-main-content .main-text {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left; }
+  .hero .hero-contents .hero-main-content .mobile10x {
+    margin-top: 40px; }
+  .objectives h1 {
+    width: 100%;
+    margin-left: 10%;
+    text-align: left; }
+  .objectives .pink-grid {
+    left: -10px;
+    top: -40px; }
+  .day-plan .blue-grid {
+    right: -10px; } }
+
+@media (max-width: 450px) {
+  html {
+    overflow-x: hidden; }
+  .hero .hero-contents .android-illustration {
+    width: 50%; }
+    .hero .hero-contents .android-illustration img {
+      -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      transform: scale(0.5); }
+  .hero .hero-contents .hero-main-content {
+    width: 50%; }
+    .hero .hero-contents .hero-main-content .main-text .days {
+      margin-right: 10px; }
+  .hero .grid-pattern {
+    left: -50%;
+    top: -130px;
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6); }
+  .background .yellow-strip {
+    display: none; }
+  .event-info .info-card {
+    width: 75%;
+    padding-right: 30%; }
+    .event-info .info-card .date, .event-info .info-card .time, .event-info .info-card .venue {
+      margin-bottom: 15px; }
+  .objectives {
+    margin-top: 150px; }
+    .objectives .square-background {
+      top: 0px; }
+  .day-plan {
+    margin-top: 100px; }
+    .day-plan .square-background {
+      top: 0px; }
+  .partners {
+    margin-top: 100px; }
+    .partners .heading h1 {
+      margin-bottom: 70px; }
+    .partners .heading .square-background {
+      width: 150px;
+      height: 80px;
+      left: 20%; }
+    .partners .partner-logos .logo {
+      width: 40%;
+      margin-bottom: 30px; }
+  .register {
+    margin-top: 100px; }
+    .register .heading h1 {
+      margin-bottom: 70px; }
+    .register .heading .square-background {
+      width: 150px;
+      height: 80px;
+      right: 20%; }
+    .register .terms-card {
+      margin-bottom: 70px; } }
