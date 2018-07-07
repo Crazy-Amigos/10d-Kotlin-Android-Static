@@ -237,7 +237,7 @@ nav ul {
     width: 40%;
     font-size: 4rem;
     font-weight: 600;
-    text-align: lefet;
+    text-align: left;
     padding-left: 2%; }
   .day-plan .content-card {
     width: 60%;
@@ -273,3 +273,47 @@ nav ul {
     -webkit-transform: scale(0.65);
     -ms-transform: scale(0.65);
     transform: scale(0.65); }
+
+.partners {
+  margin-top: 100px; }
+  .partners .heading {
+    position: relative; }
+    .partners .heading h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      text-align: left;
+      padding-left: 4%;
+      margin-bottom: 100px; }
+    .partners .heading .square-background {
+      background: #F1F4F6;
+      width: 250px;
+      height: 120px;
+      position: absolute;
+      left: 7%;
+      top: 0;
+      z-index: -10; }
+  .partners .partner-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 10%; }
+    .partners .partner-logos .logo {
+      margin: 0 4%; }
+      .partners .partner-logos .logo img {
+        width: 100%;
+        -webkit-filter: brightness(0);
+        filter: brightness(0);
+        opacity: 0.5;
+        -webkit-transition: 0.3s all ease;
+        -o-transition: 0.3s all ease;
+        transition: 0.3s all ease; }
+        .partners .partner-logos .logo img:hover {
+          -webkit-filter: brightness(1);
+          filter: brightness(1);
+          opacity: 1; }
