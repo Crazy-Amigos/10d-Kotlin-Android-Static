@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<section class="home">
+	<section class="home" id="home">
 		<div class="background">
 			<img src="images/pink-triangle.png" alt="pink triangle" class="pink-triangle">
 			<img src="images/yellow-strip.png" alt="yellow strip" class="yellow-strip">
@@ -16,22 +16,22 @@
 		</div>
 		<nav>
 			<ul class="nav-items">
-				<li><a href="#">HOME</a></li>
-				<li><a href="#">OBJECTIVES</a></li>
-				<li><a href="#">DAY PLAN</a></li>
-				<li><a href="#">PARTNERS</a></li>
-				<li><a href="#" id="register-nav">REGISTER</a></li>
-				<li><a href="#">CONTACT</a></li>
+				<li><a href="#home" class="nav">HOME</a></li>
+				<li><a href="#objectives" class="nav">OBJECTIVES</a></li>
+				<li><a href="#day-plan" class="nav">DAY PLAN</a></li>
+				<li><a href="#partners" class="nav">PARTNERS</a></li>
+				<li><a href="#register" id="register-nav" class="nav">REGISTER</a></li>
+				<li><a href="#contact" class="nav">CONTACT</a></li>
 			</ul>
 			<div class="menu">
 				<img src="images/menu-icon.png" alt="menu-icon" class="menu-icon">
 				<ul class="nav-list">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">OBJECTIVES</a></li>
-					<li><a href="#">DAY PLAN</a></li>
-					<li><a href="#">PARTNERS</a></li>
-					<li><a href="#">REGISTER</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="#home" class="nav">HOME</a></li>
+					<li><a href="#objectives" class="nav">OBJECTIVES</a></li>
+					<li><a href="#day-plan" class="nav">DAY PLAN</a></li>
+					<li><a href="#partners" class="nav">PARTNERS</a></li>
+					<li><a href="#register" class="nav">REGISTER</a></li>
+					<li><a href="#contact" class="nav">CONTACT</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -90,7 +90,7 @@
 		<div class="background"></div>
 	</section>
 
-	<section class="objectives">
+	<section class="objectives" id="objectives">
 		<h1>Objectives</h1>
 		<div class="content-card">
 			<ul>
@@ -111,7 +111,7 @@
 		</div>
 	</section>
 
-	<section class="day-plan">
+	<section class="day-plan" id="day-plan">
 		<div class="content-card">
 			<div class="day">
 				<h3 class="day-name">Day1</h3>
@@ -161,7 +161,7 @@
 		</div>
 	</section>
 
-	<section class="partners">
+	<section class="partners" id="partners">
 		<div class="heading">
 			<h1>Partners</h1>
 			<div class="square-background"></div>
@@ -170,15 +170,15 @@
 			<div class="logo">
 				<img src="images/gdg.png" alt="google developers group kozhikode logo">
 			</div>
-			<div class="logo">
+			<!-- <div class="logo">
 				<img src="images/kerala-startup.png" alt="kerala startup mission logo">
-			</div>
+			</div> -->
 			<div class="logo">
 				<img src="images/kotlin-kozhikode.png" alt="kotlin kozhikode user group logo">
 			</div>
-			<div class="logo">
+			<!-- <div class="logo">
 				<img src="images/ksidc.png" alt="kerala state industrial development corporation ltd logo">
-			</div>			
+			</div> -->			
 		</div>
 		<div class="yellow-strip">
 			<img src="images/yellow-strip.png" alt="yellow strip">
@@ -188,7 +188,7 @@
 		</div>
 	</section>
 
-	<section class="register">
+	<section class="register" id="register">
 		<div class="heading">
 			<h1>Register</h1>
 			<div class="square-background"></div>
@@ -206,7 +206,24 @@
 		<h3>Register now and level up your skils!</h3>
 		<button onclick="window.open('https://goo.gl/forms/AGWFYv2Bxy9c1DnR2')">Register</button>
 	</section>
-	<footer style="height: 200px"></footer>
+
+	<section class="contacts" id="contact">
+		<div class="contact-details">	
+			<h1>Contacts</h1>
+			<h3>9995471353<br>talk@crazyamigos.io</h3>
+			<h4>Copyrights &copy; 2018 crazyamigos.io</h4>
+		</div>	
+		<div class="social-media">	
+			<h1>Follow us on</h1>
+			<div class="icons">
+				<a href="#" target="_blank"><img src="images/fb.png" alt="fb icon"></a>
+				<a href="#" target="_blank"><img src="images/twitter.png" alt="twitter icon"></a>
+				<a href="#" target="_blank"><img src="images/insta.png" alt="instagram icon"></a>
+				<a href="#" target="_blank"><img src="images/youtube.png" alt="youtube icon"></a>
+			</div>
+		</div>	
+		<img src="images/androids.png" alt="android robots" class="androids">
+	</section>
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/main.js"></script>

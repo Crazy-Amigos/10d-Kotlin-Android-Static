@@ -419,6 +419,47 @@ nav .menu {
       -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.16);
       box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.16); }
 
+.contacts {
+  margin-top: 100px;
+  background: #F1F4F6;
+  padding: 3% 10%;
+  padding-bottom: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  overflow: hidden; }
+  .contacts .contact-details h3 {
+    font-weight: 400; }
+  .contacts .contact-details h4 {
+    margin-top: 50px; }
+  .contacts .social-media h1 {
+    text-align: right; }
+  .contacts .social-media .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 10; }
+    .contacts .social-media .icons a {
+      margin: 10px;
+      -webkit-filter: brightness(0);
+      filter: brightness(0);
+      opacity: 0.7; }
+      .contacts .social-media .icons a:hover {
+        -webkit-filter: brightness(1);
+        filter: brightness(1);
+        opacity: 1; }
+  .contacts .androids {
+    position: absolute;
+    height: 90%;
+    left: 40%;
+    bottom: 0px;
+    z-index: 0; }
+
 /* ---------------------------------------------------- media-queries -------------------------------------------------- */
 @media (max-width: 736px) {
   nav .nav-items {
@@ -462,7 +503,9 @@ nav .menu {
     .objectives .content-card {
       width: 60%; }
     .objectives .square-background {
-      left: 25%; } }
+      left: 25%; }
+  .contacts .androids {
+    opacity: 0.5; } }
 
 @media (max-width: 1000px) {
   .event-info .info-card {
@@ -537,7 +580,9 @@ nav .menu {
       width: 40%; }
     .day-plan .blue-grid {
       right: 20px;
-      top: -100px; } }
+      top: -100px; }
+  .contacts .social-media .icons a img {
+    width: 40px; } }
 
 @media (max-width: 550px) {
   html {
@@ -561,7 +606,21 @@ nav .menu {
     left: -10px;
     top: -40px; }
   .day-plan .blue-grid {
-    right: -10px; } }
+    right: -10px; }
+  .contacts .androids {
+    opacity: 0.5; }
+  .contacts .social-media .icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .contacts .social-media .icons a {
+      margin: 0px; }
+  .contacts .contact-details h4 {
+    margin-top: 110px; } }
 
 @media (max-width: 450px) {
   html {
@@ -576,6 +635,10 @@ nav .menu {
     width: 50%; }
     .hero .hero-contents .hero-main-content .main-text .days {
       margin-right: 10px; }
+    .hero .hero-contents .hero-main-content .ca img {
+      width: 50%; }
+    .hero .hero-contents .hero-main-content .mobile10x img {
+      width: 60%; }
   .hero .grid-pattern {
     left: -50%;
     top: -130px;

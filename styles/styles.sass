@@ -392,6 +392,43 @@ nav
 			-moz-box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.16)
 			box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.16)
 
+.contacts
+	margin-top: 100px
+	background: $bluegrey
+	padding: 3% 10%
+	padding-bottom: 10px
+	position: relative	
+	display: flex
+	justify-content: space-between
+	overflow: hidden
+	.contact-details
+		h3
+			font-weight: 400
+		h4
+			margin-top: 50px
+		
+	.social-media
+		h1
+			text-align: right
+		.icons
+			display: flex
+			position: relative
+			z-index: 10
+			a
+				margin: 10px
+				filter: brightness(0)
+				opacity: 0.7
+				&:hover
+					filter: brightness(1)
+					opacity: 1
+	.androids
+		position: absolute	
+		height: 90%
+		left: 40%
+		bottom: 0px
+		z-index: 0
+
+
 
 
 
@@ -442,6 +479,9 @@ nav
 			width: 60%
 		.square-background
 			left: 25%
+	.contacts
+		.androids
+			opacity: 0.5
 
 
 @media(max-width: 1000px)
@@ -505,6 +545,11 @@ nav
 		.blue-grid
 			right: 20px
 			top: -100px
+	.contacts
+		.social-media
+			.icons
+				a img
+					width: 40px
 
 
 @media(max-width: 550px)
@@ -529,6 +574,18 @@ nav
 	.day-plan
 		.blue-grid
 			right: -10px
+	.contacts
+		.androids
+			opacity: 0.5
+		.social-media
+			.icons
+				flex-direction: column
+				align-items: center
+				a
+					margin: 0px
+		.contact-details
+			h4
+				margin-top: 110px
 
 
 @media(max-width: 450px)
@@ -544,6 +601,11 @@ nav
 				width: 50%
 				.main-text .days
 					margin-right: 10px
+				.ca img
+					width: 50%
+				.mobile10x	img
+					width: 60%
+
 		.grid-pattern
 			left: -50%
 			top: -130px
@@ -588,5 +650,6 @@ nav
 				right: 20%
 		.terms-card
 			margin-bottom: 70px
+
 
 
