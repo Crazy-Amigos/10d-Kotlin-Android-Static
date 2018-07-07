@@ -5,8 +5,10 @@ $black: #141414
 $pink: #EC407A
 $pink1: #F0598C
 $blue: #2196F3
+$blue1: #597DF0
 $orangeyellow: #FF9802
 $bluegrey: #F1F4F6
+$yellow: #FFF355
 
 
 /* ---------------------------------------------- Global ------------------------------------------------- */
@@ -218,6 +220,52 @@ nav
 		left: 100px
 		top: 30px
 		transform: scale(0.65)
+
+.day-plan
+	display: flex
+	margin-top: 200px
+	position: relative
+	h1
+		width: 40%
+		font-size: 4rem
+		font-weight: 600
+		text-align: lefet
+		padding-left: 2%
+	.content-card
+		width: 60%
+		background: $blue1
+		color: white
+		padding: 2% 6%
+		-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+		-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+		box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+		.day
+			margin: 30px 0px
+			.day-name
+				color: $yellow
+				font-size: 1.4rem
+				margin-bottom: 0px
+			.plan
+				font-weight: 400
+				font-size: 1.4rem
+				color: white
+				margin-top: 0px
+	.square-background
+		background: $bluegrey
+		width: 25%
+		height: 70%
+		position: absolute
+		right: 25%
+		top: -10%
+		z-index: -10
+	.blue-grid
+		position: absolute
+		right: 100px
+		top: 30px
+		transform: scale(0.65)
+
+
+
 
 
 
