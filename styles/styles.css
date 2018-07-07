@@ -1,0 +1,189 @@
+/* ---------------------------------------------- variables ------------------------------------------------- */
+/* ---------------------------------------------- Global ------------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 14px;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+/* ---------------------------------------------- Home ------------------------------------------------- */
+.home {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100px; }
+
+.background img {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  position: absolute;
+  z-index: -10; }
+
+.background .pink-triangle {
+  left: 5%;
+  top: 5%; }
+
+.background .yellow-strip {
+  top: -80px;
+  left: 50%;
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  transform: scale(0.6); }
+
+.background .blue-triangle {
+  right: 5%;
+  top: 15%;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7); }
+
+.background .pink-strip {
+  right: -130px;
+  bottom: -50px;
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  transform: scale(0.6); }
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  padding-right: 20px; }
+  nav ul li {
+    display: inline-block; }
+    nav ul li a {
+      display: block;
+      text-decoration: none;
+      color: #141414;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 5px 15px; }
+    nav ul li a:hover {
+      color: #EC407A; }
+    nav ul li #register-nav {
+      border: 1px solid #EC407A; }
+      nav ul li #register-nav:hover {
+        background: #EC407A;
+        color: white; }
+
+.hero {
+  margin: 0 20%;
+  padding-top: 30px;
+  position: relative; }
+  .hero .grid-pattern {
+    position: absolute;
+    z-index: -10;
+    left: -20%;
+    top: -20px;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); }
+  .hero .hero-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .hero .hero-contents .hero-main-content .ca {
+      margin-bottom: 50px; }
+      .hero .hero-contents .hero-main-content .ca img {
+        width: 35%; }
+      .hero .hero-contents .hero-main-content .ca h3 {
+        font-weight: 400; }
+    .hero .hero-contents .hero-main-content .main-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .hero .hero-contents .hero-main-content .main-text .days {
+        text-align: center;
+        margin-right: 30px; }
+        .hero .hero-contents .hero-main-content .main-text .days h1 {
+          font-size: 6em;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          font-weight: 600;
+          color: #EC407A; }
+        .hero .hero-contents .hero-main-content .main-text .days h2 {
+          font-size: 1.4rem;
+          margin-top: -12px; }
+      .hero .hero-contents .hero-main-content .main-text .workshop h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-top: 12px; }
+        .hero .hero-contents .hero-main-content .main-text .workshop h1 span {
+          color: #2196F3; }
+    .hero .hero-contents .hero-main-content .mobile10x {
+      margin-top: 70px; }
+      .hero .hero-contents .hero-main-content .mobile10x h3 {
+        font-weight: 400; }
+      .hero .hero-contents .hero-main-content .mobile10x img {
+        width: 40%; }
+    .hero .hero-contents .android-illustration img {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9); }
+
+.event-info {
+  position: relative; }
+  .event-info .info-card {
+    margin: 0 auto;
+    background: white;
+    width: 40%;
+    padding: 2%;
+    padding-right: 20%;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    position: relative; }
+    .event-info .info-card .date, .event-info .info-card .venue {
+      margin-bottom: 30px; }
+      .event-info .info-card .date h2, .event-info .info-card .venue h2 {
+        font-size: 1.3rem;
+        color: #EC407A;
+        margin-bottom: 0px; }
+      .event-info .info-card .date h3, .event-info .info-card .venue h3 {
+        margin-top: 10px; }
+    .event-info .info-card h3.text {
+      font-weight: 400; }
+      .event-info .info-card h3.text span {
+        color: #2196F3;
+        font-weight: 600; }
+    .event-info .info-card .free-panel {
+      background: #FF9802;
+      -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+      position: absolute;
+      bottom: -50px;
+      right: -50px;
+      z-index: 100;
+      padding: 20px 15%;
+      text-align: center;
+      color: white; }
+      .event-info .info-card .free-panel h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        position: relative; }
+        .event-info .info-card .free-panel h1 span {
+          font-size: 1.2rem;
+          position: absolute;
+          top: 5px;
+          right: -2px; }
+  .event-info .background {
+    width: 100%;
+    height: 70%;
+    z-index: -10;
+    background: #F1F4F6;
+    position: absolute;
+    bottom: -100px; }
