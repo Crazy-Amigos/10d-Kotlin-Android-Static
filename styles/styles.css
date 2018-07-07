@@ -609,6 +609,8 @@ nav .menu {
     right: -10px; }
   .contacts .androids {
     opacity: 0.5; }
+  .contacts .social-media h1 {
+    text-align: center; }
   .contacts .social-media .icons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
