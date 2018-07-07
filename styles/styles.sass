@@ -6,6 +6,7 @@ $pink: #EC407A
 $pink1: #F0598C
 $blue: #2196F3
 $blue1: #597DF0
+$blue2: #50B0E8
 $orangeyellow: #FF9802
 $bluegrey: #F1F4F6
 $yellow: #FFF355
@@ -261,11 +262,11 @@ nav
 	.blue-grid
 		position: absolute
 		right: 100px
-		top: 30px
+		top: 10px
 		transform: scale(0.65)
 
 .partners
-	margin-top: 100px
+	margin-top: 150px
 	.heading
 		position: relative
 		h1
@@ -298,8 +299,74 @@ nav
 					filter: brightness(1)
 					opacity: 1
 
-
-
+.register
+	margin-top: 150px
+	.heading
+		position: relative
+		h1
+			font-size: 4rem
+			font-weight: 600
+			text-align: right
+			padding-right: 4%
+			margin-bottom: 100px
+		.square-background
+			background: $bluegrey
+			width: 250px
+			height: 120px
+			position: absolute
+			right: 7%
+			top: 0
+			z-index: -10
+	.terms-card
+		margin-bottom: 100px
+		width: 80%
+		margin-left: 20%
+		background: $blue2
+		-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+		-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+		box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+		color: white
+		padding: 2% 5%
+		h1
+			font-size: 2rem
+			position: relative
+			margin-left: 20px
+			span
+				position: absolute
+				top: 0
+				left: -20px
+				font-size: 1.4rem
+		ul
+			li
+				font-size: 1.4rem
+				margin: 20px 0px
+	h3
+		display: block
+		text-align: center
+		font-weight: 600
+		font-size: 1.3rem
+		margin-bottom: 50px
+	button
+		display: block
+		margin: 0 auto
+		padding: 20px 50px
+		border-radius: 7px
+		border: none
+		color: white
+		background: $pink1
+		font-size: 1.6rem
+		-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+		-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+		box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+		cursor: pointer
+		outline: none
+		transition: all 0.4s ease
+		&:hover
+			background: $pink
+			transform: translate(0, -2px)
+			-webkit-box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.16)
+			-moz-box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.16)
+			box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.16)
 
 
 
