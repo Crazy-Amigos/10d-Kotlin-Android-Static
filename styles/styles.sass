@@ -144,14 +144,16 @@ nav
 		-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
 		box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
 		position: relative
-		.date, .venue
+		.date, .venue, .time
 			margin-bottom: 30px
 			h2
 				font-size: 1.3rem
 				color: $pink
 				margin-bottom: 0px
 			h3
-				margin-top: 10px
+				margin-top: 5px
+				span
+					font-weight: 400
 		h3.text
 			font-weight: 400
 			span
@@ -169,6 +171,7 @@ nav
 			padding: 20px 15%
 			text-align: center
 			color: white
+			padding-bottom: 80px
 			h1
 				font-size: 4rem
 				font-weight: 500
@@ -177,10 +180,10 @@ nav
 					font-size: 1.2rem
 					position: absolute
 					top: 5px
-					right: -2px
+					right: -10px
 	.background
 		width: 100%
-		height: 70%
+		height: 75%
 		z-index: -10
 		background: $bluegrey
 		position: absolute
@@ -267,6 +270,7 @@ nav
 
 .partners
 	margin-top: 150px
+	position: relative
 	.heading
 		position: relative
 		h1
@@ -298,6 +302,24 @@ nav
 				&:hover
 					filter: brightness(1)
 					opacity: 1
+	.yellow-strip
+		overflow: hidden
+		position: absolute
+		right: 0
+		top: -150px
+		z-index: -20
+		img	
+			float: right
+			transform: translate(120px,0) scale(0.7)
+	.pink-strip
+		overflow: hidden
+		position: absolute
+		left: 0
+		bottom: -350px
+		z-index: -20
+		img
+			float: left
+			transform: translate(-120px,0) scale(0.7)
 
 .register
 	margin-top: 150px
@@ -367,6 +389,7 @@ nav
 			-webkit-box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.16)
 			-moz-box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.16)
 			box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.16)
+
 
 
 

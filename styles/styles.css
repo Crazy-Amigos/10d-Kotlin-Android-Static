@@ -146,14 +146,16 @@ nav ul {
     -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
     position: relative; }
-    .event-info .info-card .date, .event-info .info-card .venue {
+    .event-info .info-card .date, .event-info .info-card .venue, .event-info .info-card .time {
       margin-bottom: 30px; }
-      .event-info .info-card .date h2, .event-info .info-card .venue h2 {
+      .event-info .info-card .date h2, .event-info .info-card .venue h2, .event-info .info-card .time h2 {
         font-size: 1.3rem;
         color: #EC407A;
         margin-bottom: 0px; }
-      .event-info .info-card .date h3, .event-info .info-card .venue h3 {
-        margin-top: 10px; }
+      .event-info .info-card .date h3, .event-info .info-card .venue h3, .event-info .info-card .time h3 {
+        margin-top: 5px; }
+        .event-info .info-card .date h3 span, .event-info .info-card .venue h3 span, .event-info .info-card .time h3 span {
+          font-weight: 400; }
     .event-info .info-card h3.text {
       font-weight: 400; }
       .event-info .info-card h3.text span {
@@ -170,7 +172,8 @@ nav ul {
       z-index: 100;
       padding: 20px 15%;
       text-align: center;
-      color: white; }
+      color: white;
+      padding-bottom: 80px; }
       .event-info .info-card .free-panel h1 {
         font-size: 4rem;
         font-weight: 500;
@@ -179,10 +182,10 @@ nav ul {
           font-size: 1.2rem;
           position: absolute;
           top: 5px;
-          right: -2px; }
+          right: -10px; }
   .event-info .background {
     width: 100%;
-    height: 70%;
+    height: 75%;
     z-index: -10;
     background: #F1F4F6;
     position: absolute;
@@ -275,7 +278,8 @@ nav ul {
     transform: scale(0.65); }
 
 .partners {
-  margin-top: 150px; }
+  margin-top: 150px;
+  position: relative; }
   .partners .heading {
     position: relative; }
     .partners .heading h1 {
@@ -317,6 +321,28 @@ nav ul {
           -webkit-filter: brightness(1);
           filter: brightness(1);
           opacity: 1; }
+  .partners .yellow-strip {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: -150px;
+    z-index: -20; }
+    .partners .yellow-strip img {
+      float: right;
+      -webkit-transform: translate(120px, 0) scale(0.7);
+      -ms-transform: translate(120px, 0) scale(0.7);
+      transform: translate(120px, 0) scale(0.7); }
+  .partners .pink-strip {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: -350px;
+    z-index: -20; }
+    .partners .pink-strip img {
+      float: left;
+      -webkit-transform: translate(-120px, 0) scale(0.7);
+      -ms-transform: translate(-120px, 0) scale(0.7);
+      transform: translate(-120px, 0) scale(0.7); }
 
 .register {
   margin-top: 150px; }
