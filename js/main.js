@@ -17,4 +17,13 @@ $(document).ready(function(){
 	});
 
 
+	//$(".day-name").addClass("hidden1");
+	$(".day-name").addClass("hidden1");
+	$(".day-name").click(function(){
+		$(this).toggleClass("hidden");
+		$(this).toggleClass("hidden1");
+		$(this).next().next().toggleClass("show");
+		$(this).next().toggleClass("hide");
+	});
+
 });

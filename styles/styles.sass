@@ -251,11 +251,57 @@ nav
 				color: $yellow
 				font-size: 1.4rem
 				margin-bottom: 0px
+				position: relative	
+			.day-name::after
+				content: ''
+				width: 26px 
+				height: 26px
+				position: absolute	
+				right: 0px
+				top: 0px
+				background-image: url('../images/white-plus.png') 
+				background-size: cover
+				background-repeat: no repeat
+				padding: 1px
+				cursor: pointer
+			.day-name.hidden::after
+				display: none
+			.day-name::before
+				content: ''
+				width: 26px 
+				height: 26px
+				position: absolute	
+				right: 0px
+				top: 0px
+				background-image: url('../images/white-minus.png') 
+				background-size: cover
+				background-repeat: no repeat
+				padding: 1px
+				cursor: pointer
+			.day-name.hidden1::before
+				display: none
+
 			.plan
 				font-weight: 400
 				font-size: 1.4rem
 				color: white
 				margin-top: 0px
+				margin-bottom: 0px
+			.plan.hide
+				display: none
+			.detailed-plan
+				display: none
+				h3
+					margin-top: 2px
+					font-size: 1.4rem
+					font-weight: 600
+					margin-bottom: 0
+				h4
+					font-size: 1.3rem
+					font-weight: 400
+					margin-top: 0
+			.detailed-plan.show	
+				display: block
 	.square-background
 		background: $bluegrey
 		width: 25%

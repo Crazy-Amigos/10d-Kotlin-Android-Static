@@ -258,12 +258,57 @@ nav .menu {
       .day-plan .content-card .day .day-name {
         color: #FFF355;
         font-size: 1.4rem;
-        margin-bottom: 0px; }
+        margin-bottom: 0px;
+        position: relative; }
+      .day-plan .content-card .day .day-name::after {
+        content: '';
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-image: url("../images/white-plus.png");
+        background-size: cover;
+        background-repeat: no repeat;
+        padding: 1px;
+        cursor: pointer; }
+      .day-plan .content-card .day .day-name.hidden::after {
+        display: none; }
+      .day-plan .content-card .day .day-name::before {
+        content: '';
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-image: url("../images/white-minus.png");
+        background-size: cover;
+        background-repeat: no repeat;
+        padding: 1px;
+        cursor: pointer; }
+      .day-plan .content-card .day .day-name.hidden1::before {
+        display: none; }
       .day-plan .content-card .day .plan {
         font-weight: 400;
         font-size: 1.4rem;
         color: white;
-        margin-top: 0px; }
+        margin-top: 0px;
+        margin-bottom: 0px; }
+      .day-plan .content-card .day .plan.hide {
+        display: none; }
+      .day-plan .content-card .day .detailed-plan {
+        display: none; }
+        .day-plan .content-card .day .detailed-plan h3 {
+          margin-top: 2px;
+          font-size: 1.4rem;
+          font-weight: 600;
+          margin-bottom: 0; }
+        .day-plan .content-card .day .detailed-plan h4 {
+          font-size: 1.3rem;
+          font-weight: 400;
+          margin-top: 0; }
+      .day-plan .content-card .day .detailed-plan.show {
+        display: block; }
   .day-plan .square-background {
     background: #F1F4F6;
     width: 25%;
