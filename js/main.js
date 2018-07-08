@@ -28,11 +28,11 @@ $(document).ready(function(){
 
 	$(document).scroll(function(){
 
-		if( (($("#objectives").offset().top)-($(document).scrollTop()))<700 ){
+		if( (($("#objectives").offset().top)-($(document).scrollTop()))<600 ){
 			$(".content-card1").addClass("show");
 		}
 
-		if( (($("#day-plan").offset().top)-($(document).scrollTop()))<700 ){
+		if( (($("#day-plan").offset().top)-($(document).scrollTop()))<600 ){
 			$(".content-card2").addClass("show");
 		}
 
