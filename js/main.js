@@ -26,4 +26,22 @@ $(document).ready(function(){
 		$(this).next().toggleClass("hide");
 	});
 
+	$(document).scroll(function(){
+
+		if( (($("#objectives").offset().top)-($(document).scrollTop()))<700 ){
+			$(".content-card1").addClass("show");
+		}
+
+		if( (($("#day-plan").offset().top)-($(document).scrollTop()))<700 ){
+			$(".content-card2").addClass("show");
+		}
+
+		if( (($("#register").offset().top)-($(document).scrollTop()))<500 ){
+			$(".terms-card").addClass("show");
+		}
+
+
+	})
+	
+
 });

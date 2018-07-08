@@ -26,6 +26,7 @@ body
 	font-family: 'Open Sans', sans-serif
 	margin: 0
 	padding: 0
+	overflow-x: hidden
 
 
 /* ---------------------------------------------- Home ------------------------------------------------- */
@@ -209,10 +210,16 @@ nav
 		-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
 		-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
 		box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+		transform: translate(100px)
+		opacity: 0
+		transition: all 1s ease-out
 		ul
 			li
 				font-size: 1.4rem
 				margin-bottom: 10px
+	.content-card.show
+		transform: translate(0)
+		opacity: 1
 	.square-background
 		background: $bluegrey
 		width: 25%
@@ -245,6 +252,9 @@ nav
 		-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
 		-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
 		box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+		transform: translate(-100px)
+		opacity: 0
+		transition: all 1s ease-out
 		.day
 			margin: 30px 0px
 			.day-name
@@ -304,6 +314,9 @@ nav
 					margin-top: 0
 			.detailed-plan.show	
 				display: block
+	.content-card.show
+		transform: translate(0)
+		opacity: 1
 	.square-background
 		background: $bluegrey
 		width: 25%
@@ -400,6 +413,9 @@ nav
 		box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
 		color: white
 		padding: 2% 5%
+		transform: translate(100px)
+		opacity: 0
+		transition: all 1s ease-out
 		h1
 			font-size: 2rem
 			position: relative
@@ -413,6 +429,10 @@ nav
 			li
 				font-size: 1.4rem
 				margin: 20px 0px
+	.terms-card.show
+		transform: translate(0)
+		opacity: 1
+
 	h3
 		display: block
 		text-align: center

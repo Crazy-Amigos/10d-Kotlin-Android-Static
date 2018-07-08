@@ -12,7 +12,8 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
 
 /* ---------------------------------------------- Home ------------------------------------------------- */
 .home {
@@ -213,10 +214,22 @@ nav .menu {
     padding: 2% 5%;
     -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16); }
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    -webkit-transform: translate(100px);
+    -ms-transform: translate(100px);
+    transform: translate(100px);
+    opacity: 0;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out; }
     .objectives .content-card ul li {
       font-size: 1.4rem;
       margin-bottom: 10px; }
+  .objectives .content-card.show {
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+    opacity: 1; }
   .objectives .square-background {
     background: #F1F4F6;
     width: 25%;
@@ -252,7 +265,14 @@ nav .menu {
     padding: 2% 6%;
     -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16); }
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    -webkit-transform: translate(-100px);
+    -ms-transform: translate(-100px);
+    transform: translate(-100px);
+    opacity: 0;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out; }
     .day-plan .content-card .day {
       margin: 30px 0px; }
       .day-plan .content-card .day .day-name {
@@ -311,6 +331,11 @@ nav .menu {
           margin-top: 0; }
       .day-plan .content-card .day .detailed-plan.show {
         display: block; }
+  .day-plan .content-card.show {
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+    opacity: 1; }
   .day-plan .square-background {
     background: #F1F4F6;
     width: 25%;
@@ -422,7 +447,14 @@ nav .menu {
     -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
     color: white;
-    padding: 2% 5%; }
+    padding: 2% 5%;
+    -webkit-transform: translate(100px);
+    -ms-transform: translate(100px);
+    transform: translate(100px);
+    opacity: 0;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out; }
     .register .terms-card h1 {
       font-size: 2rem;
       position: relative;
@@ -435,6 +467,11 @@ nav .menu {
     .register .terms-card ul li {
       font-size: 1.4rem;
       margin: 20px 0px; }
+  .register .terms-card.show {
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+    opacity: 1; }
   .register h3 {
     display: block;
     text-align: center;
