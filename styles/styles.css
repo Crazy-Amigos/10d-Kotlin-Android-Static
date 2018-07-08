@@ -271,7 +271,8 @@ nav .menu {
         background-size: cover;
         background-repeat: no repeat;
         padding: 1px;
-        cursor: pointer; }
+        cursor: pointer;
+        z-index: 200; }
       .day-plan .content-card .day .day-name.hidden::after {
         display: none; }
       .day-plan .content-card .day .day-name::before {
@@ -285,7 +286,8 @@ nav .menu {
         background-size: cover;
         background-repeat: no repeat;
         padding: 1px;
-        cursor: pointer; }
+        cursor: pointer;
+        z-index: 200; }
       .day-plan .content-card .day .day-name.hidden1::before {
         display: none; }
       .day-plan .content-card .day .plan {
@@ -323,7 +325,8 @@ nav .menu {
     top: 10px;
     -webkit-transform: scale(0.65);
     -ms-transform: scale(0.65);
-    transform: scale(0.65); }
+    transform: scale(0.65);
+    z-index: -10; }
 
 .partners {
   margin-top: 150px;
